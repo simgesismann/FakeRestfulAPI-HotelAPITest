@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-12T15:24:09 TRT" name="Default Suite" finished-at="2022-09-12T15:24:11 TRT" duration-ms="2704">
+    <groups>
+    </groups>
+    <test started-at="2022-09-12T15:24:09 TRT" name="HotelAPITest" finished-at="2022-09-12T15:24:11 TRT" duration-ms="2704">
+      <class name="AFakeRestfulAPI">
+        <test-method signature="test_getGuests()[pri:1, instance:AFakeRestfulAPI@73d4cc9e]" started-at="2022-09-12T15:24:09 TRT" name="test_getGuests" finished-at="2022-09-12T15:24:11 TRT" duration-ms="2333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_getGuests -->
+        <test-method signature="test_getGuestsWithQueryParamRoomId()[pri:2, instance:AFakeRestfulAPI@73d4cc9e]" started-at="2022-09-12T15:24:11 TRT" name="test_getGuestsWithQueryParamRoomId" finished-at="2022-09-12T15:24:11 TRT" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_getGuestsWithQueryParamRoomId -->
+        <test-method signature="test_postGuest()[pri:3, instance:AFakeRestfulAPI@73d4cc9e]" started-at="2022-09-12T15:24:11 TRT" name="test_postGuest" finished-at="2022-09-12T15:24:11 TRT" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_postGuest -->
+        <test-method signature="test_putGuest()[pri:4, instance:AFakeRestfulAPI@73d4cc9e]" started-at="2022-09-12T15:24:11 TRT" name="test_putGuest" finished-at="2022-09-12T15:24:11 TRT" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_putGuest -->
+        <test-method signature="test_patchGuest()[pri:5, instance:AFakeRestfulAPI@73d4cc9e]" started-at="2022-09-12T15:24:11 TRT" name="test_patchGuest" finished-at="2022-09-12T15:24:11 TRT" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_patchGuest -->
+        <test-method signature="test_deleteGuest()[pri:6, instance:AFakeRestfulAPI@73d4cc9e]" started-at="2022-09-12T15:24:11 TRT" name="test_deleteGuest" finished-at="2022-09-12T15:24:11 TRT" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_deleteGuest -->
+      </class> <!-- AFakeRestfulAPI -->
+    </test> <!-- HotelAPITest -->
+  </suite> <!-- Default Suite -->
+</testng-results>
