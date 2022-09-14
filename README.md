@@ -1,5 +1,7 @@
 # FakeRestfulAPI-HotelAPITest
-API tests for fake restful api ; DataProvider and Excel datas are used
+API tests for fake restful api ; DataProvider and Excel datas are used.
+Log4j is preferred to create log file.
+Test outputs are revealed by testng runs for AFakeRestfulAPI and HotelReservation API tests. You can see screenshots below.
 
 First install json-server, go to that folder and 
 run npx json-server --watch db.json command in terminal
@@ -23,3 +25,9 @@ You should see new db with posted guests.
 
 DExcelUtilTest_Delete test class includes delete method and again I used dataProvider to delete last created ones.
 
+FakeAPI TEST result :
+
+![image](https://user-images.githubusercontent.com/62858275/190256506-ad898293-69f4-4883-8a2d-957eb6d78608.png)
+
+HotelReservation Test result : 
+<img width="849" alt="Ekran Resmi 2022-09-14 23 32 16" src="https://user-images.githubusercontent.com/62858275/190256589-60e402f7-0ba2-4fd9-b239-27326fddf960.png">
