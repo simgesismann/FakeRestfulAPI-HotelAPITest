@@ -1,12 +1,10 @@
-import io.restassured.http.ContentType;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 import utils.BodyValues;
 
-import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
-public class FakeRestfulGetBodyAndNegativeTests extends BodyValues {
+public class EFakeRestfulGetBody extends BodyValues {
     logger.Log log;
     /**
      *  npx json-server --watch db.json
@@ -17,6 +15,7 @@ public class FakeRestfulGetBodyAndNegativeTests extends BodyValues {
      */
     @Test(priority = 1)
     public void test_postGuest_getBody(){
+        log = new logger.Log();
         JSONObject request = new JSONObject();
         for(int i=0;i<4;i++){
             request.put("name",bodyValues[i][0]);
@@ -29,21 +28,7 @@ public class FakeRestfulGetBodyAndNegativeTests extends BodyValues {
                     when().post( "http://localhost:3000/guests").
                     then().log().all().
                     statusCode(201);
-        }
-    }
-    @Test(priority = 2)
-    public void negativeTest_postGuest_WithoutName(){
-        JSONObject request = new JSONObject();
-        for(int i=0;i<4;i++){
-            request.put("surname",bodyValues[i][1]);
-            request.put("roomId",bodyValues[i][2]);
-            request.put("start-date",bodyValues[i][3]);
-            request.put("end-date",bodyValues[i][4]);
-            given().contentType("application/json").
-                    body(request.toJSONString()).
-                    when().post( "http://localhost:3000/guests").
-                    then().log().all().
-                    statusCode(201);
+            log.info("new data with name "+bodyValues[i][0]+" is created in db by getting body from another class");
         }
     }
 }

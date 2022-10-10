@@ -70,7 +70,8 @@ public class HotelReservationAPI {
                 "    \"lastname\" : \"Brown\"\n" +
                 "}";
         given().contentType("application/json").
-                header("Cookie","token=ab7fac73296bc2e").
+                header("Cookie","token=d37d30e7fa6ac37").
+                body(partialBody).
                 patch("https://restful-booker.herokuapp.com/booking/127").
                 then().statusCode(200);
     }
@@ -93,7 +94,8 @@ public class HotelReservationAPI {
                 "    \"additionalneeds\" : \"Breakfast\"\n" +
                 "}";
         given().contentType("application/json").
-                header("Cookie","token=ab7fac73296bc2e").
+                header("Cookie","token=d37d30e7fa6ac37").
+                body(body3).
                 put("https://restful-booker.herokuapp.com/booking/127").
                 then().statusCode(200);
     }
@@ -104,7 +106,7 @@ public class HotelReservationAPI {
     @Test(priority = 6)
     public void deleteCreatedBooking(){
         given().contentType("application/json").
-                header("Cookie","token=ab7fac73296bc2e").
+                header("Cookie","token=d37d30e7fa6ac37").
                 delete("https://restful-booker.herokuapp.com/booking/127").
                 then().statusCode(201);
     }
